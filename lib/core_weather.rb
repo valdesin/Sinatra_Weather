@@ -9,7 +9,6 @@ class Weather
 	def parse_main_temp
 		doc = Nokogiri::HTML(open("https://es.search.yahoo.com/search;?q=#{@city}%20weather"))
 		@main_temp = doc.css("span.currTemp").text
-puts @city
 	end
 
 	def temperature city="Kiev"
@@ -21,6 +20,3 @@ puts @city
 	#private :parse_main_temp	
 
 end
-
-@w = Weather.new
-puts @w.temperature "Moscow"

@@ -3,8 +3,29 @@
 	<head>
 		<title>Weathe</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="assets/style.css">
 	</head>
 	<body>
-		<h1> <%= @weather.temperature "Moscow"%> </h1>
+	<div class="main">
+	
+		<div class="top">
+			<img src="images/sun.svg" alt="Sun" class="icon-sun">	
+			<img src="images/cloud.svg" alt="cloud" class="icon-cloud">		
+			<div class="search">
+				<h1 class="head-weather">Weather</h1>
+				<div class="search-block">
+                        		<input type="search" placeholder="Enter your City" class="search-weather">
+                        		<button type="button" class="button-search"></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="low">
+			<img src="images/tree.svg" alt="tree" class="icon-trees">
+			<img src="images/tree.svg" alt="tree" class="icon-trees">
+			<img src="images/tree.svg" alt="tree" class="icon-trees">
+			<img src="images/tree.svg" alt="tree" class="icon-trees">
+		</div>
+	</div>
 	</body>
 </html>
